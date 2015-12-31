@@ -1,0 +1,27 @@
+{
+  "name": "txthx",
+  "description": "A port of txtjs, a <canvas> font and typesetting engine for CreateJS",
+  "keywords": [
+    "txtjs",
+    "CreateJS",
+    "haxe",
+    "font"
+  ],
+  "author": "David Mouton",
+  "version": "0.0.1",
+  "license": "BSD",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "main": "",
+  "homepage": "http://txtjs.com",
+  "bugs": "https://github.com/damoebius/txthx/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damoebius/txthx.git"
+  },
+  "dependencies": {
+    "haxe" : "0.320.6",
+    "createjs-haxe" : ">=1.5.6"
+  }
+}

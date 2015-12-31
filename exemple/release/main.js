@@ -1,0 +1,41 @@
+(function (console) { "use strict";
+var Main = function() {
+	var canvas;
+	var _this = window.document;
+	canvas = _this.createElement("canvas");
+	canvas.width = 1000;
+	canvas.height = 1000;
+	window.document.body.appendChild(canvas);
+	var stage = new createjs.Stage(canvas);
+	var txtParams = new txt_TextParameters();
+	txtParams.text = "The fox jumped over the log.";
+	txtParams.font = "raleway";
+	txtParams.align = 2;
+	txtParams.tracking = -4;
+	txtParams.lineHeight = 120;
+	txtParams.width = 600;
+	txtParams.height = 360;
+	txtParams.size = 120;
+	var mytxt = new txt.Text(txtParams);
+	mytxt.x = 10;
+	mytxt.y = 10;
+	stage.addChild(mytxt);
+	stage.update();
+};
+Main.main = function() {
+	console.log("test de txtjs");
+	new Main();
+};
+var txt_Interfaces = function() { };
+var txt_Style = function() { };
+var txt_ConstructObj = function() { };
+var txt_ShapeEvents = function() { };
+var txt_WordEvents = function() { };
+var txt_LineEvents = function() { };
+var txt_EventCallback = function() { };
+var txt_Point = function() { };
+var txt_TextParameters = function() {
+};
+txt_TextParameters.__interfaces__ = [txt_ConstructObj];
+Main.main();
+})(typeof console != "undefined" ? console : {log:function(){}});
